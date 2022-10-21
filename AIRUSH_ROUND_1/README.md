@@ -19,24 +19,24 @@
 - AdamW, linear scheduler
 
 ### 3. Underfitting
-- 130000:4000이라는 Imbalanced Dataset 문제를 해결하기 위하여 Underfitting 활요 ㅇ
+- 130000:4000이라는 **Imbalanced Dataset 문제를 해결하기 위하여 Underfitting 활용**
 - 엉터리 Data를 앞에서 부터 4000개를 Sampling하여, 총 8000개의 Dataset으로 학습을 수행
 
 ### 4. Layer Summation
-- Backbone Model의 마지막 4개의 Layer의 CLS Token에 대한 hidden state vector들을 Summation하여 classification에 활용
+- **Backbone Model의 마지막 4개의 Layer의 CLS Token에 대한 hidden state vector들을 Summatio**n하여 classification에 활용
 
 ### 5. Test Overflow Max
-- Long Document 특성을 해결하기 위하여, Overflow를 통해 Document를 Max_length 길이의 Token 단위로 쪼갠다.
-- 각각의 쪼개진 Document에 대하여, 엉터리 문서인지 판별
-- 하나의 Document Segment에 대하여 엉터리 문서라고 판단했다면, 엉터리 문서로 최종 분류
+- Long Document 특성을 해결하기 위하여, **Overflow를 통해 Document를 Max_length 길이의 Token 단위로 쪼갠다.**
+- **각각의 쪼개진 Document에 대하여, 엉터리 문서인지 판별**
+- **하나의 Document Segment에 대하여 엉터리 문서라고 판단했다면, 엉터리 문서로 최종 분류**
 
 ### 6. Ensemble
 - KLUE/RoBERTa-large, KPF-bert, KoBigBird를 Ensemble하여 최종 예측 수행
 
 ### 특이점
-- KoBigBird를 활용할 때, Classification Head를 부착하지 않은 채로 예측을 수행.
+- **KoBigBird를 활용할 때, Classification Head를 부착하지 않은 채로 예측을 수행.**
 - 768개(BERT의 output layer의 dimension)의 Multi-class classification으로 잘못 예측을 수행하였으나, 학습시 0과 1의 데이터로만 학습을 하였기 때문에, 768개의 class 중 0과 1로 대부분 예측을 수행함.
-- 예측의 결과를 보았을 때, Classification Head를 부착하지 않은 채로 예측할 때, 성능이 다소 높게 나옴. (Classification Head vs not = `0.94` : `0.947`)
+- 예측의 결과를 보았을 때, **Classification Head를 부착하지 않은 채로 예측할 때, 성능이 다소 높게 나옴. (Classification Head vs not = `0.94` : `0.947`)**
 
 ## 시도했지만 성능 향상으로 이어지지 않음.
 
