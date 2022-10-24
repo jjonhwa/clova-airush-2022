@@ -23,7 +23,7 @@
 - 엉터리 Data를 앞에서 부터 4000개를 Sampling하여, 총 8000개의 Dataset으로 학습을 수행
 
 ### 4. Layer Summation
-- **Backbone Model의 마지막 4개의 Layer의 CLS Token에 대한 hidden state vector들을 Summatio**n하여 classification에 활용
+- **Backbone Model의 마지막 4개의 Layer의 CLS Token에 대한 hidden state vector들을 Summation**하여 classification에 활용
 
 ### 5. Test Overflow Max
 - Long Document 특성을 해결하기 위하여, **Overflow를 통해 Document를 Max_length 길이의 Token 단위로 쪼갠다.**
