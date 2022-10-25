@@ -8,10 +8,10 @@
 - **Test 시, 학습한 Data는 옳게 분류하고, 학습하지 않은 Data는 Unknown으로 분류**
 - **Multiclass Classification와 Unknown Detection이 결합된 형태의 Task**
 
-## Core Idea
-
-### 전체 Process
+## 전체 Process
 - [**Presentation**](https://github.com/jjonhwa/clova-airush-2022/blob/main/AIRUSH_ROUND_2/AIRUSH_Unknown_Detection_3%EC%9C%84.pdf) 참고
+
+## Core Idea
 
 ### 1. Pretrained Transformer Model 활용
 - Pretrained Transformer MOdel이 OOD Task에서 높은 성능을 나타낸다는 연구 결과. => ***Backbone Model로서 BERT 계열 Model 채택***
