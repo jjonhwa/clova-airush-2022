@@ -1,6 +1,6 @@
 # NAVER AI RUSH 2022 Unknown Detection
 🥉 Top 3 in NAVER AI RUSH 2022 Round 2: Unknown Detection
-## 대회 설명
+## About Competition
 ![Unknown_Detection_Task](https://user-images.githubusercontent.com/53552847/197756342-34f9b21a-a930-4be4-9703-127eff610399.png)
 
 - 모델이 학습하지 않은 종류의 문서를 탐지하는 Task
