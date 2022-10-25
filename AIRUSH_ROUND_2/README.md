@@ -8,7 +8,7 @@
 - **Test 시, 학습한 Data는 옳게 분류하고, 학습하지 않은 Data는 Unknown으로 분류**
 - **Multiclass Classification와 Unknown Detection이 결합된 형태의 Task**
 
-## 전체 Process
+## Overall Process
 - [**Presentation**](https://github.com/jjonhwa/clova-airush-2022/blob/main/AIRUSH_ROUND_2/AIRUSH_Unknown_Detection_3%EC%9C%84.pdf) 참고
 
 ## Core Idea
