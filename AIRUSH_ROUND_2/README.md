@@ -1,6 +1,5 @@
 # NAVER AI RUSH 2022 Unknown Detection
 🥉 Top 3 in NAVER AI RUSH 2022 Round 2: Unknown Detection
-
 ## 대회 설명
 ![Unknown_Detection_Task](https://user-images.githubusercontent.com/53552847/197756342-34f9b21a-a930-4be4-9703-127eff610399.png)
 
@@ -10,7 +9,9 @@
 - **Multiclass Classification와 Unknown Detection이 결합된 형태의 Task**
 
 ## Core Idea
-- 자세한 내용은 [Presentation](https://github.com/jjonhwa/clova-airush-2022/blob/main/AIRUSH_ROUND_2/AIRUSH_Unknown_Detection_3%EC%9C%84.pdf) 참고
+
+### 전체 Process
+- [**Presentation**](https://github.com/jjonhwa/clova-airush-2022/blob/main/AIRUSH_ROUND_2/AIRUSH_Unknown_Detection_3%EC%9C%84.pdf) 참고
 
 ### 1. Pretrained Transformer Model 활용
 - Pretrained Transformer MOdel이 OOD Task에서 높은 성능을 나타낸다는 연구 결과. => ***Backbone Model로서 BERT 계열 Model 채택***
@@ -69,4 +70,3 @@
 - Test 시, Attack Model을 활용하여, Test Data가 In-Out인지를 판단하여, Unknown Text을 분류하는 것에 활용하고자 함.
 - 성능이 좋지 않음
     - K-Fold를 수행하여 나뉜 Train, Valid Data의 형태가 거의 동일하기 때문에, In-Out Data의 특성을 잡아내지 못하는 것으로 보임. 
-
