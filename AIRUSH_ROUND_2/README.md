@@ -10,21 +10,21 @@
 - **Multiclass Classification와 Unknown Detection이 결합된 형태의 Task**
 
 ## Core Idea
-- 자세한 내용은 [Presentation](#https://github.com/jjonhwa/clova-airush-2022/blob/main/AIRUSH_ROUND_2/AIRUSH_Unknown_Detection_3%EC%9C%84.pdf) 참고
+- 자세한 내용은 [Presentation](https://github.com/jjonhwa/clova-airush-2022/blob/main/AIRUSH_ROUND_2/AIRUSH_Unknown_Detection_3%EC%9C%84.pdf) 참고
 
 ### 1. Pretrained Transformer Model 활용
 - Pretrained Transformer MOdel이 OOD Task에서 높은 성능을 나타낸다는 연구 결과. => ***Backbone Model로서 BERT 계열 Model 채택***
 - 많은 Data로 Pre-training을 진행할 경우, OOD Detection에서 더 좋은 성능을 나타낸다는 연구 결과. => ***KPF-Bert를 최종 Backbone Model로 선정*** 
 
 ### 2. Diverse Loss Function
-- Large Margin Softmax
+- **Large Margin Softmax**
     - "정답 Class"와 "정답이 아닌 Class" 사이의 Margin을 줌으로서 "정답 Class"를 좀 더 확실하게 맞추도록 하는 방법론
     - class간의 차이를 보다 확실하게 함으로써, ***"In-Distribution" Dataset은 더 높은 Logit (더 확실하게 예측 가능)으로 맞추고, "Out-Distribution" Data은 좀 더 낮은 Logit (덜 확실하게 예측)을 가질 것으로 기대***
 
-- Relax Loss
+- **Relax Loss**
     - Gradient Descent와 Ascent를 혼합하여 학습함으로써, Classification은 잘 수행하면서 MIAs task에서 Member or not을 더 잘 수행할 수 있는 기법
     - "In-Distribution Dataset", "Out-Distribution Dataset" 모두에서 "Confidence Logit"을 완화
-    - ***In-Distribution Data를 덜 정확하게 예측하기 때문에, Out-of-Distribution Data는 그보다 덜 정확하게 예측될 수 밖에 없을 것으로 기대 (In: 95% -> 70% 예측했을 경우, Out: 90% -> 60%일 것으로 기대)***
+    - ***In-Distribution Data를 덜 정확하게 예측하기 때문에, Out-of-Distribution Data는 그보다 덜 정확하게 예측될 수 밖에 없을 것으로 기대 (In: 95%(CE) -> 70%(Relax) 예측했을 경우, Out: 90%(CE) -> 60%(Relax)일 것으로 기대)***
 
 ### 3. Preprocessing
 - Hanspell을 활용하여 맞춤법(띄어쓰기 및 맞춤법) 검사 수행
