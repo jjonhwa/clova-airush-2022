@@ -1,5 +1,5 @@
 # NAVER AI RUSH 2022 Unknown Detection
-🥉 Top 3 in NAVER AI RUSH 2022 Round 2: Unknown Detection
+**🥉 Top 3 in NAVER AI RUSH 2022 Round 2: Unknown Detection**
 ## About Competition
 ![Unknown_Detection_Task](https://user-images.githubusercontent.com/53552847/197756342-34f9b21a-a930-4be4-9703-127eff610399.png)
 
