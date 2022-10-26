@@ -1,5 +1,5 @@
-# NAVER AI RUSH 2022 Nonsense Documents Detection
-**🥉 Top 2 in NAVER AI RUSH 2022 Round 1: Nonsense Documents Detection**
+# NAVER AI RUSH 2022 - Nonsense Documents Detection
+**🥈 Top 2 in "Round 1: Nonsense Documents Detection"**
 
 ## About Competition
 ![Nonsense_docuement_detection](https://user-images.githubusercontent.com/53552847/197984010-aace21e8-c56a-43a8-8ca4-2c92487a161d.png)

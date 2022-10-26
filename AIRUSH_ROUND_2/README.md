@@ -1,5 +1,5 @@
-# NAVER AI RUSH 2022 Unknown Detection
-**🥉 Top 3 in NAVER AI RUSH 2022 Round 2: Unknown Detection**
+# NAVER AI RUSH 2022 - Unknown Documents Detection
+**🥉 Top 3 in "Round 2: Unknown Documents Detection"**
 
 ## About Competition
 ![Unknown_Detection_Task](https://user-images.githubusercontent.com/53552847/197756342-34f9b21a-a930-4be4-9703-127eff610399.png)
@@ -29,7 +29,7 @@
     - ***In-Distribution Data를 덜 정확하게 예측하기 때문에, Out-of-Distribution Data는 그보다 덜 정확하게 예측될 수 밖에 없을 것으로 기대 (In: 95%(CE) -> 70%(Relax) 예측했을 경우, Out: 90%(CE) -> 60%(Relax)일 것으로 기대)***
 
 ### 3. Preprocessing
-- Hanspell을 활용하여 맞춤법(띄어쓰기 및 맞춤법) 검사 수행
+- ***Hanspell을 활용하여 맞춤법(띄어쓰기 및 맞춤법) 검사 수행***
 - Train & Test Data 모두에 적용
 
 ### 4. Ensemble
