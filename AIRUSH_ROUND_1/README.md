@@ -4,7 +4,7 @@
 ## About Competition
 ![Nonsense_docuement_detection](https://user-images.githubusercontent.com/53552847/197984010-aace21e8-c56a-43a8-8ca4-2c92487a161d.png)
 - **엉터리 문서 (Nonsense Documents)**
-    - ***문맥이 맞지 않은 단어들로 구성***된 문서 혹은 ***단어의 순서를 바꾸어도 전혀 말이 되지 않는 문서***를 의미한다.
+    - **문맥이 맞지 않은 단어들로 구성**된 문서 혹은 **단어의 순서를 바꾸어도 전혀 말이 되지 않는 문서**를 의미한다.
 - **엉터리 문서를 Classification하는 Task**
 - **Imbalanced가 심한 Data**의 형태
     - Train: 정상문서의 개수가 엉터리 문서에 비해 훨씬 많음
@@ -24,7 +24,7 @@
 ### 3. Layer Summation
 ![Summation Layer](https://user-images.githubusercontent.com/53552847/198031955-202fdf3c-998d-4c5b-b553-80572bf35a05.png)
 
-- **Backbone Model의 마지막 4개의 Layer의 CLS Token에 대한 hidden state vector들을 Summation**하여 classification에 활용
+- ***Backbone Model의 마지막 4개의 Layer의 CLS Token에 대한 hidden state vector들을 Summation***하여 classification에 활용
 
 ### 4. Test Overflow Max
 ![overflow_test](https://user-images.githubusercontent.com/53552847/197992965-ac504314-2610-4f71-a578-c88267027941.png)
@@ -39,9 +39,9 @@
 ### 특이점
 ![페니실린](https://user-images.githubusercontent.com/53552847/198036072-08bb561f-94cf-4b9e-b684-1b02561cb914.png)
 
-- **KoBigBird를 활용할 때, Classification Head를 부착하지 않은 채로 예측을 수행.**
+- ***KoBigBird를 활용할 때, Classification Head를 부착하지 않은 채로 예측을 수행.***
 - 768개(BERT의 output layer의 dimension)의 Multi-class classification으로 잘못 예측을 수행하였으나, 학습시 0과 1의 데이터로만 학습을 하였기 때문에, 768개의 class 중 0과 1로 대부분 예측을 수행함.
-- 예측의 결과를 보았을 때, **Classification Head를 부착하지 않은 채로 예측할 때, 성능이 다소 높게 나옴. (Classification Head vs not = `0.94` : `0.947`)**
+- 예측의 결과를 보았을 때, ***Classification Head를 부착하지 않은 채로 예측할 때, 성능이 다소 높게 나옴. (Classification Head vs not = `0.94` : `0.947`)***
 
 ## 시도했지만 성능 향상으로 이어지지 않음.
 

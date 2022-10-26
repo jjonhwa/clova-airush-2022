@@ -10,7 +10,7 @@
 ## Round1: Nonsens Documents Detection
 ![Nonsense_docuement_detection](https://user-images.githubusercontent.com/53552847/197984010-aace21e8-c56a-43a8-8ca4-2c92487a161d.png)
 - **엉터리 문서 (Nonsense Documents)**
-    - ***문맥이 맞지 않은 단어들로 구성***된 문서 혹은 ***단어의 순서를 바꾸어도 전혀 말이 되지 않는 문서***를 의미한다.
+    - **문맥이 맞지 않은 단어들로 구성**된 문서 혹은 **단어의 순서를 바꾸어도 전혀 말이 되지 않는 문서**를 의미한다.
 - **엉터리 문서를 Classification하는 Task**
 
 **[자세한 내용 보기](https://github.com/jjonhwa/clova-airush-2022/tree/main/AIRUSH_ROUND_1)**
