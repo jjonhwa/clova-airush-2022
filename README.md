@@ -1,11 +1,11 @@
 # NAVER AI RUSH 2022
+![airush](https://user-images.githubusercontent.com/53552847/198039191-0116de37-e764-4b95-8702-fd342de723d7.png)
 
 **🥈 Top 2 in Round 1: Nonsense Documents Detection**
 
 **🥉 Top 3 in Round 2: Unknown Documents Detection**
 
-**Award Poster: [Poster]()**
-![airush](https://user-images.githubusercontent.com/53552847/198039191-0116de37-e764-4b95-8702-fd342de723d7.png)
+**Award Poster: [Poster](https://github.com/jjonhwa/clova-airush-2022/blob/main/AIRUSH_Unknown_Detection_3%EC%9C%84.pdf)**
 
 ## Round1: Nonsens Documents Detection
 ![Nonsense_docuement_detection](https://user-images.githubusercontent.com/53552847/197984010-aace21e8-c56a-43a8-8ca4-2c92487a161d.png)

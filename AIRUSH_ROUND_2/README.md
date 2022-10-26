@@ -10,7 +10,7 @@
 - **Multiclass Classification와 Unknown Detection이 결합된 형태의 Task**
 
 ## Overall Process
-- [**Presentation**](https://github.com/jjonhwa/clova-airush-2022/blob/main/AIRUSH_ROUND_2/AIRUSH_Unknown_Detection_3%EC%9C%84.pdf) 참고
+- [**Presentation**](https://github.com/jjonhwa/clova-airush-2022/blob/main/AIRUSH_Unknown_Detection_3%EC%9C%84.pdf) 참고
 
 ## Core Idea
 
