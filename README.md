@@ -1,5 +1,5 @@
 # NAVER AI RUSH 2022
-![airush](https://user-images.githubusercontent.com/53552847/198039191-0116de37-e764-4b95-8702-fd342de723d7.png)
+![airush](https://user-images.githubusercontent.com/53552847/198039191-0116de37-e764-4b95-8702-fd342de723d7.png)(#https://campaign.naver.com/clova_airush/)
 
 **🥈 Top 2 in Round 1: Nonsense Documents Detection**
 
